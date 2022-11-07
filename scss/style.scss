@@ -355,4 +355,143 @@ header{
 .partners{
     margin-bottom: 137px;
 }
+.form__list{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.contact__list{
+    list-style: none;
+    li+li{
+        margin-top: 20px;
+    }
+    a{
+        font-family: OpenSans_Condensed-Bold;
 
+        font-size: 16px;
+        line-height: 1.37;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-decoration: none;
+        font-style: normal;
+        transition: all 0.6s;
+        &:hover{
+            color: #D1A954;
+        }
+
+    }
+    
+    .form__mail{
+        text-decoration: underline;
+    }
+
+}
+.flex__item{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -46px;
+    margin-top: -30px;
+}
+.form__section{
+    padding-bottom: 80px;
+}
+.form__text{
+    max-width: 390px;
+    list-style: none;
+    li+li{
+        margin-top: 40px;
+    }
+    
+    li{
+        
+        input{
+            margin-left: 30px;
+            margin-top: 30px;
+            width: 180px;
+            height: 35px;
+            background: #444444;
+            border: 1px solid #616161;
+            flex-basis: content;
+            padding-left: 15px;
+            &::placeholder{
+                
+                color: #989898;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 1.5;
+                font-family: 'Open Sans', sans-serif;
+            }
+           
+
+        }
+    }
+
+}
+.security__tag{
+    font-size: 12px;
+    line-height: 1.5;
+    color: #989898;
+
+}
+.send__list{
+    list-style: none;
+    li{
+        textarea{
+            resize: none;
+            width: 291px;
+            height: 100px;
+            background: #444444;
+            border: 1px solid #616161;
+            margin-bottom: 40px;
+            padding-left: 15px;
+            padding-top: 10px;
+            &::placeholder{
+                
+                color: #989898;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 1.5;
+                font-family: 'Open Sans', sans-serif;
+                
+            }
+           
+        }
+        .button__send{
+            padding: 10px 47px;
+            background: #D1A954;
+            cursor: pointer;
+            font-size: 18px;
+            font-family: OpenSans_Condensed-Bold;
+            line-height: 1.38;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            transition: all 0.6s;
+            border: 0;
+            float: right;
+            &:hover{
+                color:#D1A954;
+                background: #FFFFFF;
+            }
+            
+        }
+    }
+}
+.footer{
+    border-top: 1px solid #565656;
+    padding: 30px 0;
+    
+}
+.footer__list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    li{
+        font-size: 12px;
+        line-height: 1.5;
+        color: #989898;
+        font-family: 'Open Sans', sans-serif;
+
+    }
+}

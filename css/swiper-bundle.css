@@ -41,7 +41,7 @@
   transition-property: transform;
   box-sizing: content-box;
 }
-.wrapper2{
+.wrapper1{
   left: -90px;
   
   
@@ -49,6 +49,7 @@
   
   
 }
+
 .swiper-android .swiper-slide,
 .swiper-wrapper {
   transform: translate3d(0px, 0, 0);
@@ -59,12 +60,17 @@
 .swiper-pointer-events.swiper-vertical {
   touch-action: pan-x;
 }
-.swiper-slide {
+.swiper-slide{
   flex-shrink: 0;
-  width: 443px!important;
-  height: 550px;
+  width:100%;
+  height: 100%;
   position: relative;
   transition-property: transform;
+}
+.slide1, .slide2,.slide3, .slide4{
+  width: 443px!important;
+  height: 550px;
+
 }
 .slide1{
  
@@ -764,4 +770,16 @@ button.swiper-pagination-bullet {
  
 
 
+}
+.swiper2{
+  margin-bottom: 139px;
+}
+.wrapper2{
+  align-items: center;
+}
+.swiper3{
+  margin-bottom: 135px;
+}
+.wrapper3{
+  align-items: center;
 }
