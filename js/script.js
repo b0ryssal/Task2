@@ -15,3 +15,15 @@ const swiper3 = new Swiper('.swiper3',{
     
 
 })
+const swiper4 = new Swiper('.hero__swiper',{
+    slidesPerView:1,
+    allowTouchMove: false,
+    effect: "cards",
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+    
+
+})
