@@ -20,7 +20,7 @@ body {
 aside {
   background: rgba(51, 51, 51, 0.75);
   max-width: 150px;
-  position: fixed;
+  position: absolute;
   height: 1045px;
   top: 0px;
   z-index: 3;
@@ -80,6 +80,14 @@ header {
   border-bottom: 2px solid #D1A954;
 }
 
+.header__social-list {
+  display: none;
+  list-style: none;
+}
+.header__social-list svg {
+  fill: #FFFFFF;
+}
+
 .social__list {
   list-style: none;
   max-width: 26px;
@@ -104,9 +112,15 @@ header {
 }
 
 .group {
+  position: relative;
   background: url(../images/Rectangle\ 3\ \(1\).jpg) no-repeat center;
   background-size: cover;
   height: 1045px;
+  z-index: 5;
+}
+
+.header__burger {
+  display: none;
 }
 
 .container {
@@ -389,7 +403,7 @@ header {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-left: -46px;
+  margin-left: -30px;
   margin-top: -30px;
 }
 
@@ -407,12 +421,10 @@ header {
 .form__text li input {
   margin-left: 30px;
   margin-top: 30px;
-  width: 180px;
+  width: 161px;
   height: 35px;
   background: #444444;
   border: 1px solid #616161;
-  -ms-flex-preferred-size: content;
-      flex-basis: content;
   padding-left: 15px;
 }
 .form__text li input::-webkit-input-placeholder {
